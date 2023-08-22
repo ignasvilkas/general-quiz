@@ -1,0 +1,70 @@
+/* dont forget to chose font */
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(18, 98, 145);
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: rgb(140, 208, 248);
+    border: 2px solid rgb(3, 90, 139);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+
+.btn:hover {
+    border-color: black;
+}
+
+.btn.correct {
+    background-color: rgb(3, 165, 38);
+    color: black;
+}
+
+.btn.wrong {
+    background-color: red;
+    color: black;
+}
+
+.start-btn, .next-btn {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
