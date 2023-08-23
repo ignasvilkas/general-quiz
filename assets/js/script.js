@@ -6,17 +6,15 @@ startButton.addEventListener('click', startGame);
 function startGame() {
     startButton.classList.add('hide');
     questionContainerElement.classList.remove('hide');
-    setNextQuestion()
 }
 
 function setNextQuestion() {
-
 }
 
 function selectAnswer() {
 
 }
-
+ 
 const questions = [
    {
     question: 'What is the smallest country in the world?',
@@ -26,7 +24,7 @@ const questions = [
         {text: 'Bahamas', correct: false},
         {text: 'Maldives', correct: false}
     ]
-   } 
+   }, 
    {
     question: 'What is the name of the paradise Viking warriors go to after death?',
     answers: [
@@ -35,7 +33,7 @@ const questions = [
         {text: 'Valhalla', correct: true},
         {text: 'Jannah', correct: false}
     ]
-   } 
+   }, 
    {
     question: 'What was the first feature-length movie made by Pixar?',
     answers: [
@@ -44,7 +42,7 @@ const questions = [
         {text: 'Monsters University', correct: false},
         {text: 'Finding Nemo', correct: false}
     ]
-   } 
+   }, 
    {
     question: 'What is the name of the coffee shop in the sitcom Friends',
     answers: [
@@ -53,7 +51,7 @@ const questions = [
         {text: 'Munchattan', correct: false},
         {text: 'Liberty cafe', correct: false}
     ]
-   } 
+   }, 
    {
     question: 'What year was the first model of the Iphone released?',
     answers: [
@@ -62,7 +60,7 @@ const questions = [
         {text: '1999', correct: false},
         {text: '2007', correct: true}
     ]
-   } 
+   }, 
    {
     question: 'What is the capital of Texas?',
     answers: [
@@ -71,7 +69,7 @@ const questions = [
         {text: 'Houston', correct: false},
         {text: 'Dallas', correct: false}
     ]
-   } 
+   }, 
    {
     question: 'Which famous American band was originally called "Karas Flowers"?',
     answers: [
@@ -80,7 +78,7 @@ const questions = [
         {text: 'Sum 41', correct: false},
         {text: 'Maroon 5', correct: true}
     ]
-   }
+   },
    {
     question: 'What country were the French fries created in?',
     answers: [
@@ -89,7 +87,7 @@ const questions = [
         {text: 'France', correct: false},
         {text: 'United Kingdom', correct: false}
     ]
-   }  
+   },  
    {
     question: 'How many teeth does an adult have',
     answers: [
@@ -98,7 +96,7 @@ const questions = [
         {text: '26', correct: false},
         {text: '32', correct: true}
     ]
-   } 
+   }, 
    {
     question: 'How many years are there in a century?',
     answers: [
