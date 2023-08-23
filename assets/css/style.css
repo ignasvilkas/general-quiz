@@ -1,7 +1,6 @@
 /* dont forget to chose font */
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family;
 }
 
 body {
