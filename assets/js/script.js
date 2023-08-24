@@ -6,6 +6,7 @@ const answerButtonsElement = document.getElementById('answer-buttons');
 
 startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', setNextQuestion);
+answerButtonsElement.addEventListener('click', selectAnswer);
 
 function startGame() {
     startButton.classList.add('hide');
