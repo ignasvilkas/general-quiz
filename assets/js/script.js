@@ -3,26 +3,35 @@ const nextButton = document.getElementById('next-btn');
 const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
+let previousQuestionIndex = -1;
 
 startButton.addEventListener('click', startGame);
 nextButton.addEventListener('click', setNextQuestion);
 answerButtonsElement.addEventListener('click', selectAnswer);
 
 function startGame() {
-    
+
     startButton.classList.add('hide');
     questionContainerElement.classList.remove('hide');
-    showQuestion(0);
+    showQuestion();
     
 }
 
-function showQuestion(questionIndex) {
+function showQuestion() {
 
-    questionElement.innerHTML = questions[questionIndex].question;
+    let questionIndex;
+    do {
+        questionIndex = Math.floor(Math.random() * questions.length);
+    } while (questionIndex === previousQuestionIndex);;
+
+    questionElement.innerText = questions[questionIndex].question;
+    previousQuestionIndex = questionIndex;
 
 }
 
 function setNextQuestion() {
+
+    showQuestion();
 
 }
 

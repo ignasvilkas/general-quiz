@@ -27,7 +27,7 @@ const questions = [
      ]
     }, 
     {
-     question: 'What is the name of the coffee shop in the sitcom Friends',
+     question: 'What is the name of the coffee shop in the sitcom Friends?',
      answers: [
          {text: 'Big Apple', correct: false},
          {text: 'Central Perk', correct: true},
@@ -72,7 +72,7 @@ const questions = [
      ]
     },  
     {
-     question: 'How many teeth does an adult have',
+     question: 'How many teeth does an adult have?',
      answers: [
          {text: '28', correct: false},
          {text: '34', correct: false},
