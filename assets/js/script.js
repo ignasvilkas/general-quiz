@@ -9,6 +9,7 @@ function startGame() {
 }
 
 function setNextQuestion() {
+
 }
 
 function selectAnswer() {
@@ -71,7 +72,7 @@ const questions = [
     ]
    }, 
    {
-    question: 'Which famous American band was originally called "Karas Flowers"?',
+    question: "Which famous American band was originally called 'Kara's Flowers'?",
     answers: [
         {text: 'Blink 182', correct: false},
         {text: 'Red Hot Chilli Peppers', correct: false},
