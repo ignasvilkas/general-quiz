@@ -3,6 +3,7 @@ const nextButton = document.getElementById('next-btn');
 const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
+const answerElement = document.getElementsByClassName('answers');
 let previousQuestionIndex = -1;
 
 startButton.addEventListener('click', startGame);
@@ -27,6 +28,10 @@ function showQuestion() {
     questionElement.innerText = questions[questionIndex].question;
     previousQuestionIndex = questionIndex;
 
+    for (let i = 0; i < answerElement.length; i++) {
+        answerElement[i].innerText = questions[questionIndex].answers[i].text;
+    }
+    
 }
 
 function setNextQuestion() {
